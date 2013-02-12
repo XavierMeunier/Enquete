@@ -1,0 +1,70 @@
+/* -- GENERAL -- */
+html{}
+body{}
+
+/* FONT-FACE */
+	@font-face{
+		font-family : " ";
+	
+		src : url('../fonts/ .eot'); /* Pour IE9 Compat mode */
+		src : url('../fonts/ .eot?') format('eot'),
+			  url('../fonts/ .woff') format('woff'),
+			  url('../fonts/ .svg') format('svg'), /*  .svg#abcd */
+			  url('../fonts/ .ttf') format('truetype');
+	}
+
+#container{font-family:sans-serif;}
+
+a{text-decoration:none;}
+
+
+/* -- HEADER -- */
+header{width:100%;height:60px;background-color:#111;position:relative;border-bottom:2px #e32c30 solid;}
+
+.logo{position:absolute;top:9px;left:13%;}
+
+nav{position:absolute;width:60%;margin-left:20%;font-size:12px;}
+nav div{text-transform:uppercase;padding-top:18px;}
+nav div a{color:#b6b6b6;}
+
+nav div:first-child{float:left;}
+nav div:nth-child(2){position:absolute;left:48%;margin-left:-56px;text-align:center;}
+nav div:last-child{float:right;}
+
+nav .active{background:url('../img/selected.png') top center no-repeat;}
+nav .active a{color:#FFF;}
+
+.social{position:absolute;top:10px;right:13%;}
+
+/* -- CONTENT -- */
+#content{background:url('../img/back.jpg');height:700px;-moz-box-shadow: inset 0 0 150px #000;-webkit-box-shadow: inset 0 0 150px#000;box-shadow: inner 0 0 150px #000;}
+
+.article{position:relative;width:950px;height:100%;left:50%;margin-left:-475px;background:#FFF;}
+
+
+.article .head{position:relative;width:100%;height:157px;background: rgba(256,256,256,0.9) url('../img/back-article.jpg');}
+.article .head div{position:absolute;}
+.article .breadcrum{top:13px;left:25px;text-transform:uppercase;color:#111;}
+.article .time{left:173px;top:31px;font-size:72px;color:#444;}
+.article .apo{left:80px;top:-15px;color:#e32c30;-webkit-transform:rotate(10deg);-moz-transform:rotate(10deg);-o-transform:rotate(10deg);transform:rotate(10deg);}
+.article .name{width:91px;height:26px;left:173px;top:105px;text-align:center;font-size:18px;color:#fff;text-transform:uppercase;background:#e32c30;}
+.article .rendezvous{left:641px;top:77px;font-size:20px;color:#e32c30;text-transform:uppercase;}
+.article .tweetlogo{left:765px;top:102px;}
+.article .tweet{left:800px;top:102px;font-size:40px;}
+
+.article .text{position:relative;width:100%;background:#FFF;}
+.article .text div{position:absolute;}
+.article .date{top:18px;left:30px;font-size:20px;text-transform:uppercase;}
+.article .subject{top:55px;left:30px;font-size:40px;text-transform:uppercase;color:#e32c30;}
+.article .title{top:107px;left:30px;font-size:50px;color:#352e24;}
+.article .visual{top:234px;left:30px;}
+.article .visual img{border:1px solid #000;}
+.article .hood{top:234px;left:650px;}
+.article .tenor{top:420px;left:650px;}
+.article .red{color:#e32c30;}
+
+
+
+
+/* -- FOOTER -- */
+footer{}
