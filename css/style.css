@@ -37,12 +37,12 @@ nav .active a{color:#FFF;}
 .social{position:absolute;top:10px;right:13%;}
 
 /* -- CONTENT -- */
-#content{background:url('../img/back.jpg');height:700px;-moz-box-shadow: inset 0 0 150px #000;-webkit-box-shadow: inset 0 0 150px#000;box-shadow: inner 0 0 150px #000;}
+#content{background:url('../img/back.jpg');height:700px;-moz-box-shadow: inset 0 0 150px #000;-webkit-box-shadow: inset 0 0 150px black;box-shadow: inner 0 0 150px #000;}
 
 .article{position:relative;width:950px;height:100%;left:50%;margin-left:-475px;background:#FFF;}
 
 
-.article .head{position:relative;width:100%;height:157px;background: rgba(256,256,256,0.9) url('../img/back-article.jpg');}
+.article .head{position:relative;width:100%;height:157px;background: rgba(256,256,256,0.9) url('../img/back-article.jpg');-webkit-box-shadow: inset 0px 100px 150px -100px black; -moz-box-shadow: inset 0px 100px 150px -100px black; box-shadow: inset 0px 100px 150px -100px black ;}
 .article .head div{position:absolute;}
 .article .breadcrum{top:13px;left:25px;text-transform:uppercase;color:#111;}
 .article .time{left:173px;top:31px;font-size:72px;color:#444;}
