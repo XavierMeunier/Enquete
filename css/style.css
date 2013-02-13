@@ -85,3 +85,15 @@ nav .active a{color:#FFF;}
 .photo{position:absolute;top:170px;left:15px;}
 .logodix{position:absolute;top:170px;left:105px;z-index:10;}
 .botbord{position:absolute;top:244px;left:0px;width:100%;height:25px;background-color:#e32c30;}
+
+
+/*-------------------
+	Plus d'articles
+-------------------*/
+#plus-enquetes #gaben { background:#c9c6b9; width:400px; height:600px; margin:100px 0 0 50px; padding:10px 15px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; -webkit-transform:rotate(5deg) scale(0.8);-moz-transform:rotate(5deg);-o-transform:rotate(5deg);transform:rotate(5deg); -webkit-transition: all 0.6s ease; }
+#plus-enquetes #gaben:hover { -webkit-transform:rotate(0deg) scale(1); }
+#plus-enquetes #gaben figure h1 { font:30px 'Anton', 'Arial'; text-transform:uppercase; line-height:1.2em; border-top:solid 2px #403d2f; padding-top:10px; }
+#plus-enquetes #gaben figure p.p-img { display:inline-block; font:400 12px 'Crete Round', 'Arial'; line-height:1.40em; width:140px; padding:10px 12px 10px 0px; box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; }
+#plus-enquetes #gaben figure img { display:inline-block; margin:10px 0 0 0;}
+#plus-enquetes #gaben p.p-2cols { display: table-cell; font:400 12px 'Rufina', 'Arial'; padding:10px 10px 0 0;  }
+#plus-enquetes #gaben p.p-2cols:last-child { padding-right:0px; }

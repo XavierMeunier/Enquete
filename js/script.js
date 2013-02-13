@@ -35,11 +35,6 @@ $(function() {
 		redimensionnement();
 
 		if(destination == 'home') {
-			
-			/*if($('.redband1').attr('width')==0){
-				$('.redband1').delay(500).animate({ width:'0'+'%'},500,function(){
-					//$('.redband2').animate({ width:'50'+'px'},500,function(){		
-				});*/
 			$('#container').animate({ marginLeft:Math.round(-w/2)+'px', marginTop:Math.round(-h)+'px'});
 			myZone = 'home';
 		}
