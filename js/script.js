@@ -15,31 +15,41 @@ $(function() {
 
 	h = $(window).height();
 	w = $(window).width();
-	divHome = Math.round((h)/6);
-	divHomeId = 0;
+	myZone = 'zone1';
 
 	$('#container').css({'width': Math.round(w*2), 'height': Math.round(h*2)});
 	$('#container section').css({'width': Math.round(w), 'height': Math.round(h)});
+	$('#container section#zone3').css({'margin-left': Math.round(w/2)});
 	$(window).resize(function(){ 
-	    redimensionnement(); 
+	    redimensionnement();
 	}); 
 
 	$('#container section').on('click', function(){
 		$this = $(this);
 		zone = $this.attr('id');
+		redimensionnement();
 
 		if(zone == 'zone1') {
-			$('#container').animate({ marginLeft:-w+'px'});
-		}
-		else if(zone == 'zone2') {
-			$('#container').animate({ marginTop:-h+'px', marginLeft:'0px'});
+			if($('.redband1').attr('width')==0){
+				$('.redband1').delay(500).animate({ width:'0'+'%'},500,function(){
+					//$('.redband2').animate({ width:'50'+'px'},500,function(){
+					$('#container').animate({ marginLeft:Math.round(-w/2)+'px', marginTop:Math.round(-h)+'px'});
+					myZone = 'zone3';		
+				});
+			}else {
+				$('#container').animate({ marginLeft:Math.round(-w/2)+'px', marginTop:Math.round(-h)+'px'});
+				myZone = 'zone3';
+			}
 		}
 		else if(zone == 'zone3') {
-			$('#container').animate({ marginLeft:-w+'px', marginTop:-h+'px' });
+			$('#container').animate({ marginTop:'0px', marginLeft:Math.round(-w)+'px' });
+			myZone = 'zone2';
 		}
-		else if(zone == 'zone4') {
-			$('#container').animate({ marginTop:'0px', marginLeft:'0px'});
+		else if(zone == 'zone2') {
+			$('#container').animate({ marginLeft:'0px' });
+			myZone = 'zone1';
 		}
+		return zone;
 	});
 });
 
@@ -53,4 +63,15 @@ function redimensionnement() {
 	}
 	$('#container').css({'width': Math.round(w*2), 'height': Math.round(h*2)});
 	$('#container section').css({'width': Math.round(w), 'height': Math.round(h)});
+	$('#container section#zone3').css({'margin-left': Math.round(w/2)});
+
+	if(myZone == 'zone1') {
+		$('#container').css({ marginLeft:'0px' });
+	}
+	else if(myZone == 'zone3') {
+		$('#container').css({marginTop:Math.round(-h)+'px', marginLeft:Math.round(-w/2)+'px'});
+	}
+	else if(myZone == 'zone2') {
+		$('#container').css({marginLeft:Math.round(-w)+'px'});
+	}
 }
