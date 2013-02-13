@@ -15,11 +15,12 @@ $(function() {
 
 	h = $(window).height();
 	w = $(window).width();
-	myZone = 'zone1';
+	myZone = 'zone3';
 
 	$('#container').css({'width': Math.round(w*2), 'height': Math.round(h*2)});
 	$('#container section').css({'width': Math.round(w), 'height': Math.round(h)});
 	$('#container section#zone3').css({'margin-left': Math.round(w/2)});
+	$('#container').css({marginLeft:Math.round(-w/2)+'px', marginTop:Math.round(-h)+'px'});
 	$(window).resize(function(){ 
 	    redimensionnement();
 	}); 
