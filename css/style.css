@@ -30,7 +30,6 @@ nav .active a{color:#FFF;}
 -------------------*/
 #container {background:url('../img/bigback.jpg');font-family:'Roboto Condensed',sans-serif;}
 #container section { display:block; float:left;   }
-#container section#zone1 {}
 
 .redband1{width:0%;height:26px;background:#f09fa0;position:absolute;top:167px;}
 
@@ -62,8 +61,3 @@ nav .active a{color:#FFF;}
 .article .hood{top:175px;left:650px;font-weight: 700;width:280px;}
 .article .tenor{top:320px;left:650px;width:280px;}
 .article .red{color:#e32c30;}
-
-
-
-#container section#zone2 {} 
-#container section#zone3 {} 
