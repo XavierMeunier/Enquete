@@ -1,0 +1,40 @@
+Merge branch 'master' of https://github.com/XavierMeunier/Enquete
+
+Conflicts:
+	css/style.css
+	index.html
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 3 different commits each, respectively.
+#
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	modified:   css/style.css
+#	new file:   img/10logo.png
+#	new file:   img/bg-pttrn.jpg
+#	new file:   img/cedric.jpg
+#	new file:   img/cyril.jpg
+#	new file:   img/denis.jpg
+#	new file:   img/emanuel.jpg
+#	new file:   img/germani.jpg
+#	new file:   img/gregoire.jpg
+#	new file:   img/kalash.jpg
+#	new file:   img/lukas.jpg
+#	new file:   img/raphael.jpg
+#	new file:   img/romain.jpg
+#	new file:   img/xavier.jpg
+#	modified:   index.html
+#
+
